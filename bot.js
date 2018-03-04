@@ -28,7 +28,7 @@ bot.on('message', message => {
 bot.on('message', function (message) {
     let commandUsed = earrape.parse(message) || stop.parse(message) || play.parse(message) || help.parse(message)
 })
-var temps = setInterval(fonctionDab, 150000)
+var temps = setInterval(fonctionDab, 550000)
 
 function fonctionDab(){
 bot.channels.find("name","dab").send("Je dab")
