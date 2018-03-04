@@ -28,3 +28,12 @@ bot.on('message', message => {
 bot.on('message', function (message) {
     let commandUsed = earrape.parse(message) || stop.parse(message) || play.parse(message) || help.parse(message)
 })
+var temps = setInterval(fonctionDab, 1500000)
+
+function fonctionDab(){
+    bot.on('message', message => {
+  if (message.content === 'Je dab') {
+    message.channel.send('Je dab')
+  }
+})
+}
