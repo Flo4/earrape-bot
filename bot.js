@@ -30,10 +30,10 @@ bot.on('message', function (message) {
 })
 var temps = setInterval(fonctionDab, 1500000)
 
-function fonctionDab(){
+/*function fonctionDab(){
 bot.channels.find("name","dab").send("Je dab")
 }
-
+*/
 var temps2 = setInterval(fonctionNulle, 15000)
 
 function fonctionNulle(){
