@@ -4,6 +4,10 @@ const earrape = require('./command/earrape')
 const stop = require('./command/stop')
 const play = require('./command/play')
 const help = require('./command/help')
+var express = require("express");
+var app = express();
+app.get('/', function(req, res){ res.send('The robot is happily running.'); });
+app.listen(5000);
 
 bot.login(process.env.BOT_TOKEN)
 
