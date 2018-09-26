@@ -8,7 +8,7 @@ static match(message){
 static action(message) {
 	let salon = message.member.voiceChannel
 
-	if( salon.connection == null) {
+	if( salon == null || salon.connection == null) {
 		message.reply("Je suis meme pas la frero")
 }
 	else {
